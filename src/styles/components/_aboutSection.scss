@@ -1,0 +1,79 @@
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 4em 1.6em;
+    
+    &__img {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-image: url('https://res.cloudinary.com/dmfhnhyyj/image/upload/v1621927963/Loopstudios/mobile/image-interactive_p3elgr.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 41%;
+    }
+
+    &__data {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+    }
+
+    &__title {
+        color: var(--color-black);
+        font-family: var(--font-family-josefin);
+        font-size: var(--font-size-sub-title);
+        margin-bottom: 0.8em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    &__description {
+        color: var(--color-gray);
+        font-family: var(--font-family-alata);
+        font-weight: var(--font-weight-regular);
+        text-align: center;
+        line-height: 1.8em;
+        width: 90%;
+    }
+}
+
+@media (min-width: 960px) {
+    .about-section {
+        align-items: center;
+        flex-direction: row;
+        height: 100vh;
+        padding: 0em 10em;
+
+        &__img {
+            background-size: cover;
+            height: 500px;
+            width: 731px;
+        }
+
+        &__data {
+            align-items: flex-start;
+            justify-content: center;
+            background-color: var(--color-white);
+            margin-top: 14em;
+            padding: 6em 7.2em;
+            position: absolute;
+            right:  0;
+            width: 50%;
+            z-index: 10;
+        }
+
+        &__title {
+            text-align: start;
+            width: 100%;
+        }
+        
+        &__description {
+            text-align: start;
+        }
+
+    }
+}

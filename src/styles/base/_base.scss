@@ -1,0 +1,15 @@
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+}
+
+@media (min-width: 960px) {
+    .wrapper {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
